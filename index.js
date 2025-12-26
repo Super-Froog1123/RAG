@@ -56,6 +56,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Express server is running 🚀");
+  res.send("runnnnnnnning!🚀")
 });
 
 
@@ -99,11 +100,17 @@ app.post("/chat", (req, res) => {
   });
 });
 
+
 // 端口
-// test______
+// 优先使用环境变量PORT（云平台会给）
+// 本地没有，用3000
 const PORT = process.env.PORT || 3000;
 
+
 // 启动服务器
+// 让Express开始监听端口
+// 回调函数只是打印一行日志
+// 这个打印是在terminal中的
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
