@@ -1,17 +1,17 @@
 {
   "name": "rag-express",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@google/genai": "^1.34.0",
+    "@google-cloud/vertexai": "^1.10.0",
     "express": "^5.2.1"
   }
 }
